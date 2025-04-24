@@ -13,10 +13,14 @@ const PButtons = () => {
     return(
         <div className="text-center p-4"> 
          <Buttons onAgregar={addList} onEliminar={deleteList} />
-         <Task />
-         <TaskList />
+
+         {showList && (<div className="mt-4">
+         <TaskList/>
         </div>
-    )
+      )}
+    </div>
+  );
+    
 
 
     
