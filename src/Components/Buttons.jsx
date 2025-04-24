@@ -1,7 +1,8 @@
-const Buttons = ([onAgregar, onEliminar]) => {
+const Buttons = ({onAgregar, onEliminar}) => {
     return (
             <div className="d-flex justify-content-center">
                 <button class="btn btn-primary" type="submit" onClick={() => {
+
                     onAgregar();
 
                 }}>
@@ -16,6 +17,6 @@ const Buttons = ([onAgregar, onEliminar]) => {
             </div>
 
     );
-}
+};
 
 export default Buttons;
