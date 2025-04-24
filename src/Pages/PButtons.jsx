@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Buttons from "../Components/Buttons";
 import Task from "../Components/Task"
-import TaskList from "../Components/TaskList"
+import TaskList from "../Components/TaskList";
 
 const PButtons = () => {
 
@@ -20,9 +20,6 @@ const PButtons = () => {
       )}
     </div>
   );
-    
-
-
     
 }
 
