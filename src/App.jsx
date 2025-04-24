@@ -1,21 +1,24 @@
 import { useState } from 'react'
-import { BrouserRouter, Router, Route } from 'react-router-dom'
 import './App.css'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import PaTaskList from './Pages/PaTaskList'
+import PButtons from './Pages/PButtons'
 import Task from './Components/Task'
+import Buttons from './Components/Buttons';
+import TaskList from './Components/TaskList';
+import CheckBox from './Components/CheckBox';
 
 function App() {
 
 
 
   return (
-    <BrouserRouter>
-      <Router>
-        <Route path="/Pages/PaTaskList" element={<PaTaskList/>}></Route>
-        <Route path="/Components/Task" element={<Task/>}></Route>
-      </Router>
-    </BrouserRouter>
-  )
-}
+    <>
+      <TaskList title="Pendiente">Hola Mundo <CheckBox></CheckBox></TaskList>
+      <TaskList title="Pendiente">Hola Mundo</TaskList>
+    </>
+  );
+};
 
-export default App
+export default App;
