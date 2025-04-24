@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <TaskList title="Pendiente">Hola Mundo <CheckBox></CheckBox></TaskList>
-      <TaskList title="Pendiente">Hola Mundo</TaskList>
+      <TaskList title="Pendiente">Hola Mundo <Buttons/></TaskList>
     </>
   );
 };
