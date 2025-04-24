@@ -1,8 +1,8 @@
-const Task = ({ text, state}) => {
+const Task = ({ text, state, children}) => {
     return (
         <>
             <ol className="list-group list-group-numbered">
-                <li className="list-group-item" >Cras justo odio</li>
+                <li className="list-group-item" title={state}> {text}, {children} </li>
             </ol>
         </>
     );
